@@ -1,0 +1,29 @@
+<!--pages/gaolao/gongsixiangxi.wxml-->
+<view  class='content'>
+  <image class='head_img' src='{{back}}' mode='aspectFill'></image>
+  <view class='title'>
+    <view class='title_logo'>
+      <image src='{{logo}}' mode='aspectFit'></image>
+    </view>
+    <view class='title_guanwang'>
+      <view class='guanwang_up' bindtap='jump_out'>
+        <text>{{name}}</text>
+        <i class='fa fa-sign-out fa-lg fa-sign-out_color'></i>
+        访问官网
+      </view>
+      <view class='guanwang_down'>
+        {{motto}}
+      </view>
+    </view>
+  </view>
+  <view class='info'>
+    <view class='info_name'>
+      组织简介
+    </view>
+    <view class='info_content' >
+      <i class='fa fa-mortar-board fa-mortar-board_css'></i>
+      <text>{{info}}</text>
+    </view>
+
+  </view>
+</view>

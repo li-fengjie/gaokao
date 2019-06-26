@@ -1,0 +1,11 @@
+<!--pages/advice/advice.wxml-->
+<view class='container'>
+  <view class='our_word'>
+    {{advice}}
+  </view>
+  <!--<textarea placeholder='输入你的意见.....' bindblur='advice_set'></textarea>
+  <view class='submit'>
+    <i class="fa fa-envelope fa-lg "></i>
+    <text>点击提交</text>
+  </view>-->
+</view>

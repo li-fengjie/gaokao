@@ -1,0 +1,155 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.98",
+	"appid": "wxd5fc991080307669",
+	"projectname": "gaokao",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 16,
+			"list": [
+				{
+					"id": 0,
+					"name": "me",
+					"pathName": "pages/me_gaokao/me_gaokao",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "college",
+					"pathName": "pages/college/college",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "collrgr_inc",
+					"pathName": "pages/college_inc/collrgr_inc",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "company_inc",
+					"pathName": "pages/company_inc/company_inc",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "psychology_inc",
+					"pathName": "pages/psychology_inc/psychology_inc",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "major_inc",
+					"pathName": "pages/major_inc/major_inc",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "major_search",
+					"pathName": "pages/major_search/major_search",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "college_search",
+					"pathName": "pages/college_search/college_search",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "province_search",
+					"pathName": "pages/province_search/province_search",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "twobest",
+					"pathName": "pages/twobest/twobest",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "province_line",
+					"pathName": "pages/province_line/province_line",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "admissions_line",
+					"pathName": "pages/admissions_line/admissions_line",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "major_watch",
+					"pathName": "pages/major_watch/major_watch",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "major_watch",
+					"pathName": "pages/major_watch_son/major_watch_son",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "major_recommend",
+					"pathName": "pages/major_recommend/major_recommend",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "advice",
+					"pathName": "pages/advice/advice",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "college_major",
+					"pathName": "pages/college_major/college_major",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "major_watch_3rdson",
+					"pathName": "pages/major_watch_3rdson/major_watch_3rdson",
+					"query": ""
+				}
+			]
+		}
+	}
+}

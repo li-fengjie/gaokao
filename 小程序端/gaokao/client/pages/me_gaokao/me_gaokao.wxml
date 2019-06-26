@@ -1,0 +1,88 @@
+<!--pages/me_gaokao/me_gaokao.wxml-->
+<view class='container'>
+  <view class='me_head'>
+    <view class='head_in'></view>
+    <view class='haed_out'>
+      <view class='head_logo'>
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+        <button wx:if="{{!hasUserInfo}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" class='get_user' bindgetuserinfo='check_user'>
+          <i class="fa fa-user fa-lg"></i>
+        </button>
+      </view>
+      <view class='head_name'>
+        <text class='name'>{{!hasUserInfo?'点击获取头像昵称':userInfo.nickName}}</text>
+      </view>
+    </view>
+  </view>
+  <view class='head_tel'>
+    <i class="fa fa-phone fa-lg"></i>
+    <text class='tel_word'>TEL</text>
+    <input class='tel_num' value="{{tel!=-1?'':'输入我的号码'}}" type='text' bindinput="tel_set" placeholder="{{tel!=-1?tel:'输入我的号码'}}"/>
+    <button bindtap='tel_up' class='get_phone'>
+      <i class="fa fa-pencil-square-o fa-lg"></i>
+    </button>
+  </view>
+  <view class='grade_Bubble'>
+    <view class='Bubble_cir'>
+      <view class="Bubble1">
+        <view bindtap='grade_input_open' class="Bubble1_cir {{Bubble[0].move==true?'Bubble_ani':''}}" data-key='0' bindanimationend="Bubble_again">
+          <text>{{Bubble[0].grade!=-1?Bubble[0].grade:''}}</text>
+          <i class="fa fa-hand-o-up fa-lg" wx:if="{{Bubble[0].grade==-1}}"></i>
+        </view>
+      </view>
+      <view class='Bubble2'>
+        <view bindtap='grade_input_open' class="Bubble2_cir {{Bubble[1].move==true?'Bubble_ani':''}}" data-key='1' bindanimationend="Bubble_again">
+          <text>{{Bubble[1].grade!=-1?Bubble[1].grade:''}}</text>
+          <i class="fa fa-hand-o-up fa-lg" wx:if="{{Bubble[1].grade==-1}}"></i>
+        </view>
+      </view>
+      <view class='Bubble3'>
+        <view bindtap='grade_input_open' class="Bubble3_cir {{Bubble[2].move==true?'Bubble_ani':''}}" data-key='2' bindanimationend="Bubble_again">
+          <text>{{Bubble[2].grade!=-1?Bubble[2].grade:''}}</text>
+          <i class="fa fa-hand-o-up fa-lg" wx:if="{{Bubble[2].grade==-1}}"></i>
+        </view>
+      </view>
+      <view class='Bubble_left'>
+        <view class="left_little1 {{little1==true?'little_move':''}}"></view>
+        <view class="left_little2 {{little2==true?'little_move2':''}}"></view>
+        <view class="left_little3 {{little3==true?'little_move':''}}" bindanimationend="little_again"></view>
+      </view>
+      <view class='Bubble_right'>
+        <view class="right_little1 {{little4==true?'little_move2':''}}"></view>
+        <view class="right_little2 {{little5==true?'little_move':''}}"></view>
+        <view class="right_little3 {{little6==true?'little_move':''}}"></view>
+      </view>
+    </view>
+    <view class='Bubble_name'>
+      <view class='name1'>一模成绩</view>
+      <view class='name2'>二模成绩</view>
+      <view class='name3'>三模成绩</view>
+    </view>
+  </view>
+  <view class='me_wish'>
+    <view class='wish_title'>我的志愿</view>
+    <view class='wish_block' bindtap='university_input_open'>
+      <i class="fa fa-fort-awesome fa-lg"></i>
+      <text>{{mywish==-1 || mywish=="undefined"?'输入我的志愿':mywish}}</text>
+    </view>
+  </view>
+  <navigator class='me_advice' open-type='navigate' url='../advice/advice'> 
+    <i class="fa fa-comments-o fa-lg"></i>
+    <text>声明</text>
+    <i class="fa fa-chevron-right fa-lg"></i>
+  </navigator>
+</view>
+<view id="curtain_black_top" wx:if="{{curtain_black_top}}" class="{{curtain_ani==true?'curtain_black':'curtain_black_reverse'}}"></view>
+
+<view id='grade_input' class="{{grade_input==true?'grade_input_come':'grade_input_reverse'}}" wx:if="{{curtain_black_top&&!curtain_university_top}}" bindanimationend="input_word">
+  <input placeholder='输入你的分数' placeholder-class="grade_text {{grade_input_word==true?'grade_input_word':''}}" bindinput="grade_set"></input>
+  <i class="fa fa-close fa-lg fa-close_input" bindtap="grade_input_close" data-key='close'></i>
+  <i class="fa fa-check fa-lg fa-check_input" bindtap="grade_input_close" data-key='check'></i>
+</view>
+
+
+<view id='university_input' class="{{grade_input==true?'grade_input_come':'grade_input_reverse'}}" bindanimationend='input_word' wx:if="{{curtain_university_top}}">
+  <input placeholder='你想找哪间大学呀？' placeholder-class="grade_text {{grade_input_word==true?'grade_input_word':''}}" bindinput="wish_set"></input>
+  <i class="fa fa-close fa-lg fa-close_university" bindtap="grade_input_close" data-key='university_close' data-search="false"></i>
+  <i class="fa fa-search fa-lg fa-search_university" bindtap="grade_input_close" data-key='university_close' data-search="true"></i>
+</view>

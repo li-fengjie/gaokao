@@ -1,0 +1,10 @@
+<!--pages/major_watch/major_watch.wxml-->
+<view class='container'>
+  <view class='watch_list'>
+    <view class='list_major' wx:for="{{major}}" id='major{{index+1}}' data-key='{{index}}' bindtap='major_son_watch'>
+        <view class='curtain'></view>
+        <view class='major_name'>{{item.name}}</view>
+        <view class='major_code'>code: {{item.code}}</view>
+    </view>
+  </view>
+</view>

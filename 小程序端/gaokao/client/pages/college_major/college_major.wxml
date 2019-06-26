@@ -1,0 +1,21 @@
+<!--pages/college_major/college_major.wxml-->
+<view class='container'>
+  <view class='admissionsline_option'>
+    <picker class='option_area' mode='selector' range='{{province_list}}' bindchange='province_change'>{{province}}</picker>
+    <!--<picker class='option_type' mode='selector' range='{{type_list}}' bindchange='type_change'>{{type}}</picker>-->
+    <picker class='option_arrangement' mode='selector' range='{{arrangement_list}}' bindchange='arrangement_change'>{{arrangement}}</picker>
+    <i class="fa fa-search fa-lg fa-search_option" bindtap='search'></i>
+  </view>
+  <view class='major_line'>
+    <view class='row'>
+      <view class='row_name'>具体专业</view>
+      <view class='row_avn'>平均分</view>
+      <view class='row_level'>批次</view>
+    </view>
+    <view class='row_grade' wx:for="{{major}}">
+      <view class='grade_name'>{{item.name}}</view>
+      <view class='grade_avn'>{{item.avn}}</view>
+      <view class='grade_level'>{{item.level}}</view>
+    </view>
+  </view>
+</view>

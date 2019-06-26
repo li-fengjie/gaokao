@@ -1,0 +1,74 @@
+<!--pages/twobest/twobest.wxml-->
+<view id='container'>
+  <view class='inc_change'>
+    <view bindtap="{{now_inc==true?'':'inc_change'}}" class='change_college'>
+      <i class="fa fa-fort-awesome"></i>
+      <text>一流大学</text>
+    </view>
+    <view bindtap="{{now_inc==false?'':'inc_change'}}" class='change_gongsi'>
+      <text>一流学科</text>
+      <i class="fa fa-book"></i>
+    </view>
+    <view class="change_block {{now_inc==true?'':'change_block_right'}}"></view>
+  </view>
+  <view class='twobeast_content'>
+    <view class="content_college {{now_inc&&ani_start==true?'inc_college_back':''}} {{now_inc==false&&ani_start==true?'inc_college_hidden':''}}"  wx:if="{{college_open}}">
+      <view class='content_A'>
+        <view class='A_title'>
+          <view class='title_i'>
+            <i class="fa fa-font"></i>
+          </view>
+          <view class='title_name'>类大学</view>
+        </view>
+        <view class='A_son' wx:for="{{college_A}}">
+          <view class='son_img'>
+            <image class='del' src='../../images/icon/boom_b.png' mode='aspectFill'></image>
+            <text>{{index+1}}</text>
+          </view>
+          <view class='son_name'>
+            <view class='name_front'>{{item.front}}</view>
+            <view class='name_last'>{{item.behind}}</view>
+          </view>
+        </view>
+      </view>
+      <view class='content_B'>
+        <view class='B_title'>
+          <view class='title_i'>
+            <i class="fa fa-bold"></i>
+          </view>
+          <view class='title_name'>类大学</view>
+        </view>
+        <view class='B_son' wx:for="{{college_B}}">
+          <view class='son_img'>
+            <image class='del' src='../../images/icon/boom_y.png' mode='aspectFill'></image>
+            <text>{{index+1}}</text>
+          </view>
+          <view class='son_name'>
+            <view class='name_front'>{{item.front}}</view>
+            <view class='name_last'>{{item.behind}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="content_major {{now_inc&&ani_start==true?'inc_major_back':''}} {{now_inc==false&&ani_start==true?'inc_major_hidden':''}}"  wx:if="{{major_open}}" bindanimationend="curtain_close">
+      <scroll-view scroll-y='true' scroll-into-view="{{toView}}" style='height:{{height_W}}px;' scroll-with-animation>
+        <view class='major_son scroll-view-item'  wx:for="{{college_major}}" bindtap='major_slide' data-key='{{index}}' id="major_son{{index}}">
+          <view class='major_college'>
+            <view class='son_num'>
+              <view class="bottom_circle {{item.spread==true?'bottom_circle_ani':''}} {{item.spread==false&&item.slide==true?'bottom_circle_ani2':''}}" bindanimationend="i_flashes" data-key='{{index}}'></view>
+              <view class='major_num'>{{index+1}}</view>
+            </view>
+            <view class='son_name'>
+              <view class='name_front'>{{item.front}}</view>
+              <view class='name_last'>{{item.behind}}</view>
+            </view>
+          </view>
+          <view class='majot_list' hidden='{{!college_major[index].slide}}'>
+            <text class='list_son list_son_ani' wx:for="{{major_list[index]}}" wx:for-item="list">{{list}}</text>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+</view>
+<view class='curtain' wx:if="{{curtain}}"></view>

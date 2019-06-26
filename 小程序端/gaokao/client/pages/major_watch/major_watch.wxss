@@ -1,0 +1,175 @@
+/* pages/major_watch/major_watch.wxss */
+.container{
+  width: 750rpx;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 200rpx;
+}
+
+.watch_list{
+  display: flex;
+  width: 680rpx;
+  flex-wrap: wrap;
+  justify-content: space-between
+}
+
+.list_major{
+  width: 337rpx;
+  height: 206.25rpx;
+  background: black;
+  margin-top: 20rpx;
+  border-radius: 20rpx;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden
+}
+.curtain{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.major_name,.major_code{
+  text-align: center;
+  position: relative;
+  z-index: 3;
+  font-weight: 800;
+}
+
+#major1{
+  background-image: url(http://www.mtdg.club/wwwroot/ftp/裕祺/images/gaokao/major1.jpg);
+  background-repeat: no-repeat;
+  background-size: 120%;
+  background-position: 50% 30%;
+}
+
+.major_code{
+  font-size: 40rpx;
+  font-weight: 800;
+}
+
+#major2{
+  background-image: url(http://www.mtdg.club/wwwroot/ftp/裕祺/images/gaokao/major2.jpg);
+  background-repeat: no-repeat;
+  background-size: 120%;
+  background-position: 50% 100%;
+}
+
+#major2 .curtain{
+   background: linear-gradient(120deg, rgba(245, 122, 178, 0.3), #f4cda5);
+   z-index: 1;
+}
+
+#major2 .major_name{
+  font-weight: 800;
+  font-size: 40rpx;
+}
+
+#major3{
+  background-image: url(http://www.mtdg.club/wwwroot/ftp/裕祺/images/gaokao/major3.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 50% 30%;
+}
+
+#major4 .curtain{
+   background: linear-gradient(120deg, rgba(85, 196, 184, 0.3), #f4cda5);
+   z-index: 1;
+}
+
+#major4{
+  background-image: url(http://www.mtdg.club/wwwroot/ftp/裕祺/images/gaokao/major4.jpg);
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background-position: 50% 80%;
+}
+
+#major5{
+  background-image: url(http://www.mtdg.club/wwwroot/ftp/裕祺/images/gaokao/major5.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 50% 80%;
+}
+
+#major5 .curtain{
+   background: linear-gradient(120deg,#f4cda5, rgba(85, 196, 184, 0.3));
+   z-index: 1;
+}
+#major5 .major_name{
+  font-weight: 800;
+  font-size: 40rpx;
+}
+
+#major6{
+  background-image: url(http://www.mtdg.club/wwwroot/ftp/裕祺/images/gaokao/major6.jpg);
+  background-repeat: no-repeat;
+  background-size: 120%;
+  background-position: 50% 0%;
+}
+
+#major7{
+  background-image: url(http://www.mtdg.club/wwwroot/ftp/裕祺/images/gaokao/major7.jpg);
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background-position: 50% 10%;
+}
+
+#major8{
+  background-image: url(http://www.mtdg.club/wwwroot/ftp/裕祺/images/gaokao/major8.png);
+  background-repeat: no-repeat;
+  background-size: 120%;
+  background-position: 50% 10%;
+}
+
+#major9{
+  background-image: url(http://www.mtdg.club/wwwroot/ftp/裕祺/images/gaokao/major9.jpg);
+  background-repeat: no-repeat;
+  background-size: 120%;
+  background-position: 50% 10%;
+}
+
+#major10{
+  background-image: url(http://www.mtdg.club/wwwroot/ftp/裕祺/images/gaokao/major10.jpg);
+  background-repeat: no-repeat;
+  background-size: 120%;
+  background-position: 50% 10%;
+}
+
+#major10 .curtain{
+   background: linear-gradient(120deg,#f4cda5, rgba(85, 196, 184, 0.3));
+   z-index: 1;
+}
+
+#major11{
+  background-image: url(http://www.mtdg.club/wwwroot/ftp/裕祺/images/gaokao/major13.jpg);
+  background-repeat: no-repeat;
+  background-size: 120%;
+  background-position: 50% 10%;
+}
+
+#major11 .curtain{
+   background: linear-gradient(120deg,#F8D17E, rgba(237, 82, 118, 0.3));
+   z-index: 1;
+}
+
+#major12{
+  background-image: url(http://www.mtdg.club/wwwroot/ftp/裕祺/images/gaokao/major11.jpg);
+  background-repeat: no-repeat;
+  background-size: 120%;
+  background-position: 50% 10%;
+}
+
+#major12 .curtain{
+   background: linear-gradient(120deg,rgba(60, 152, 158, 0.3),rgba(237, 82, 118, 0.3));
+   z-index: 1;
+}
+
+#major13{
+  background-image: url(http://www.mtdg.club/wwwroot/ftp/裕祺/images/gaokao/major12.jpg);
+  background-repeat: no-repeat;
+  background-size: 120%;
+  background-position: 50% 10%;
+}

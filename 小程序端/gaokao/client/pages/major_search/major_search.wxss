@@ -1,0 +1,72 @@
+/* pages/major_search/major_search.wxss */
+@import "../lib/style/animation_search.wxss";
+#container {
+  width: 750rpx;
+  margin-bottom: 300rpx;
+}
+.major_search{
+  width: 730rpx;
+  margin-left: 10rpx;
+  display: flex;
+  align-items: center;
+  margin-top: 5rpx;
+  border: 1px solid #FAD68A;
+  box-shadow: 0rpx 10rpx 50rpx #BCA3A3;
+}
+
+.search_button{
+  width: 100rpx;
+  height: 70rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+
+.major_search i{
+  font-size: 50rpx;
+  color: #696666;
+}
+
+.search_input{
+  width: 600rpx;
+  padding-left: 30rpx;
+  height: 50rpx;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  font-size: 30rpx;
+  letter-spacing: 1px;
+}
+
+.major_list{
+  width: 650rpx;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: flex-start
+}
+
+.list_son{
+  color: #fff;
+  margin-top: 40rpx;
+  padding: 20rpx 30rpx;
+  font-size: 35rpx;
+  margin-left: 20rpx;
+  position: relative
+}
+
+.list_son_1{
+  background-color:  #55C4B8;
+}
+
+.list_son_2{
+  background-color:  #F8D17E;
+}
+
+.list_son_3{
+  background-color:  #ED5276;
+}
+
+.list_shock{
+  animation: list_shock .4s forwards;
+}

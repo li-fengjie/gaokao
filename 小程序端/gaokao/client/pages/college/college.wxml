@@ -1,0 +1,70 @@
+<!--pages/gaolao/college.wxml-->
+<view id='container'>
+  <view class='college_head' style='background-image: url({{sch_beijing}})'>
+    <view class='head_in'></view>
+    <view class='haed_out'>
+      <view class='head_logo'>
+        <image mode='aspectFill' src='{{sch_images}}'></image>
+      </view>
+      <view class='head_name'>
+        <text class='name_chinese'>{{sch_name}}</text>
+        <text class='name_english'>{{sch_brief}}</text>
+      </view>
+    </view>
+  </view>
+  <view class='college_information'>
+    <view class='information_address information'>
+      <view class='front'>院校地址</view>
+      <view class='behind'>{{sch_address}}</view>
+    </view>
+    <view class='information_arrangement information'>
+      <view class='front'>学历层次</view>
+      <view class='behind'>{{sch_super==0?'本科一批':''}}{{sch_super==1?'本科二批':''}}{{sch_super==2?'本科三批':''}}{{sch_super==3?'专科':''}}</view>
+    </view>
+    <view class='information_type information'>
+      <view class='front'>学校类型</view>
+      <view class='behind'>{{sch_type}}</view>
+    </view>
+    <view class='information_code information'>
+      <view class='front'>学校代码</view>
+      <view class='behind'>{{sch_code}}</view>
+    </view>
+    <view class='information_introduction information'>
+      <view class='front'>学院简介</view>
+      <view class='behind'> {{sch_details}}</view>
+    </view>
+  </view>
+  <view class='college_admissionsline'>
+    <view class='admissionsline_name'>历年录取线</view>
+    <view class='admissionsline_option'>
+      <picker class='option_area' mode='selector' range='{{province_list}}' bindchange='province_change'>{{province}}</picker>
+      <picker class='option_type' mode='selector' range='{{type_list}}' bindchange='type_change'>{{type}}</picker>
+      <picker class='option_arrangement' mode='selector' range='{{arrangement_list}}' bindchange='arrangement_change'>{{arrangement}}</picker>
+      <i class="fa fa-search fa-lg fa-search_option" bindtap="search"></i>
+    </view>
+  </view>
+  <view class='college_grade'>
+    <view class='row'>
+      <view class='row_year'>年份</view>
+      <view class='row_average'>平均分</view>
+      <view class='row_min'>最低分</view>
+      <view class='row_line'>省控线</view>
+    </view>
+    <view class='grade_row' wx:for="{{college_grade}}">
+        <view class="grade_year" >{{item.year}}</view>
+        <view class="grade_average" >{{item.average}}</view>
+        <view class="grade_min" >{{item.min}}</view>
+        <view class="grade_line" >{{item.line}}</view>
+    </view>
+  </view>
+
+  <view class='college_major'>
+    <view class='major_tittle'>专业门类</view>
+    <view class='major_s' >
+     <view class='major' wx:for="{{major}}" bindtap='jumpmajor' data-key='{{item.sp_proid}}'>
+      <i class="fa fa-bookmark-o fa-lg fa-bookmark-o_major"></i>
+      <view class='major_name'>{{item.name}}</view>
+    </view>
+    </view>
+  </view>
+</view>

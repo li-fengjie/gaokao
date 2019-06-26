@@ -1,0 +1,289 @@
+/* pages/twobest/twobest.wxss */
+@import "../lib/style/animation_two.wxss";
+#container {
+  width: 750rpx;
+  margin-bottom: 300rpx;
+  
+}
+
+.inc_change{
+  width: 750rpx;
+  background: #ED5276;
+  display: flex;
+  align-items: center;
+  height: 110rpx;
+  color: #fff;
+  position: relative
+}
+
+.change_college,.change_gongsi{
+  width: 375rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.change_college i,.change_gongsi i{
+  font-size: 62.5rpx;
+  margin: 0 20rpx;
+}
+
+.change_block{
+  position: absolute;
+  width: 200rpx;
+  height: 10rpx;
+  background-color: #FAD68A;
+  bottom: 5rpx;
+  left: 87.5rpx;
+  transition: .4s;
+}
+
+.change_block_right{
+  left: 462.5rpx!important;
+}
+
+
+.twobeast_content,content_A,.content_B{
+  width: 750rpx;
+  display: flex;
+  flex-direction: column;
+  position: relative
+}
+
+.content_college{
+  position: absolute;
+  right: 0rpx;
+  top: 0rpx;
+  width: 750rpx;
+}
+
+.content_major{
+  position: absolute;
+  right: 0rpx;
+  top: 0rpx;
+  width: 750rpx;
+  background: #Fff;
+  z-index: 2
+}
+
+.content_B{
+  margin-top: 200rpx;
+}
+
+.content_A,.content_ B{
+  margin-top: 50rpx;
+}
+
+.A_title,.B_title{
+  width: 750rpx;
+  background-color: #55C4B8;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden
+}
+
+.B_title{
+  background-color: #F8D17E!important;
+}
+
+.title_name{
+  margin-left: 150rpx;
+  letter-spacing: 20rpx;
+  font-size: 40rpx;
+  color: #fff
+}
+
+.title_i{
+  height: 120rpx;
+  width: 120rpx;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 70rpx;
+  color: #55C4B8;
+  position: absolute;
+  transform: rotate(20deg);
+  left: -15rpx;
+  top: -20rpx
+}
+
+.B_title .title_i{
+  color: #F8D17E!important;
+}
+
+
+.A_son,.B_son,.major_son{
+  display: flex;
+  align-items: center;
+}
+
+.major_son{
+  margin: 50rpx 0;
+  flex-direction: column;
+  transition:.3s;
+  min-height: 50rpx;
+}
+
+.major_college{
+  display: flex;
+  align-items: center;
+  width: 750rpx;
+  justify-content: flex-end
+}
+
+.son_name{
+  font-size: 45rpx;
+  color: #55C4B8;
+  width: 610rpx;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.B_son .son_name .name_front{
+  color: #F8D17E!important;
+}
+
+.son_img image{
+  width: 140rpx;
+  height: 140rpx;
+
+}
+
+.son_img text{
+  display: block;
+  position: absolute;
+  top: 30rpx;
+}
+
+.son_img{
+  width: 140rpx;
+  position: relative;
+  font-size: 50rpx;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.name_last{
+  display: inline-block;
+  width: 300rpx;
+  color: #fff;
+  height: 100%;
+  background: #55C4B8;
+  padding-left: 20rpx;
+  border-radius: 40rpx 0 0 40rpx;
+}
+
+.B_son .son_name .name_last{
+  background: #F8D17E!important;
+}
+
+.name_front{
+  margin-right: 20rpx;
+   height: 100%;
+   width: 400rpx;
+   text-align: center;
+   font-size: 40rpx;
+}
+
+.son_num{
+  margin: 0 20rpx;
+  background-color: #55C4B8;
+  color: #fff;
+  height: 80rpx;
+  width: 80rpx;
+  font-size:40rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.bottom_circle{
+  position: absolute;
+  height: 80rpx;
+  width: 80rpx;
+  border-radius: 50%;
+  background: radial-gradient(#9BE2DA 20%, #fff);
+  border: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1
+}
+
+.bottom_circle_ani{
+  animation: list_spread 1s forwards;
+}
+
+.bottom_circle_ani2{
+  animation: list_spread2 1s forwards;
+}
+
+.circle_white{
+  height: 50%;
+  width: 50%;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.majot_list{
+  width: 650rpx;
+  margin: 30rpx auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+}
+
+.list_son{
+  background-color: #82E2D7;
+  color: #fff;
+  padding: 20rpx 30rpx;
+  font-size: 35rpx;
+  margin-left: 20rpx;
+  margin-bottom: 20rpx;
+  display: block;
+  position: relative;
+  left: 0rpx;
+  top: 0rpx;
+}
+
+.list_son_ani{
+  animation: list_shock .3s forwards
+}
+
+.curtain{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 15;
+  top: 0px;
+  left: 0rpx;
+}
+
+.change_block_right{
+  left: 462.5rpx!important;
+}
+
+.inc_college_hidden{
+   animation: inc_college_hidden .4s forwards;
+}
+
+.inc_college_back{
+  animation: inc_college_back .4s forwards;
+}
+
+.inc_major_hidden{
+  animation: inc_major_hidden .4s forwards;
+}
+
+.inc_major_back{
+  animation: inc_major_back .4s forwards;
+}

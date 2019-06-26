@@ -1,0 +1,106 @@
+/* pages/gaolao/zhuanye.wxss */
+page{
+  background-color: white;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  margin-left: 20rpx;
+  margin-right:20rpx; 
+}
+.title{
+  min-width: 40%;
+  max-width: 100%;
+  justify-content: center;
+  background-color: #55c4b8;
+  color: white;
+  display: flex;
+  height: 2.5rem;
+  align-items: center;
+  margin: 20rpx;
+  box-shadow:0 0 10px 0 #55c4b8;
+}
+.title_content{
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  display: inline-block;
+}
+.title_content image{
+  width: 50rpx;
+  height: 50rpx;
+  vertical-align: text-top;
+}
+.number{
+  display: flex;
+  background-color: #f57a82;
+  width: 100%;
+  color: white;
+  font-size: 30rpx;
+  height: 1.5rem;
+  flex-direction: row;
+  align-items: center;
+}
+.number-content{
+  display: inline-block;
+}
+.number text{
+  margin-left: 20rpx;
+}
+.num {
+  margin-left:50%;
+}
+.info{
+    display: inline-block;
+    margin-top: 20rpx;
+    font-size: 28rpx;
+    justify-content: flex-start space-around;
+    font-weight: 200;
+    margin-left: 50rpx;
+    margin-bottom: 30rpx;
+}
+.info text{
+  color:#55c4b8;
+  font-weight: 600;
+  font-size: 30rpx;
+  line-height: 50rpx;
+  padding-left: 10rpx;
+  border-left: solid 3px #55c4b8;
+}
+.school_list{
+  display: flex;
+  flex-direction: column;
+}
+.school{
+  display: inline-block;
+  font-size: 28rpx;
+  margin-left: 50rpx;
+  font-weight: 200;
+  margin-top: 10rpx;
+
+}
+.provice{
+  background-color: #55c4b8;
+  color: white;
+  line-height: 2rem;
+  padding: 10rpx;
+}
+.school text{
+  margin-left: 10rpx;
+}
+.school image{
+  width: 30rpx;
+  height: 40rpx;
+  vertical-align: text-top;
+  margin-left: 10rpx;
+}
+.fa-bookmark-o_major{
+  color: #ED5276;
+}
+
+.major_info,.school_name{
+  color: #6B6A6A;
+  font-size: 30rpx;
+  line-height: 45rpx;
+}
+

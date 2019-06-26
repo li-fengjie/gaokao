@@ -1,0 +1,48 @@
+/* pages/advice/advice.wxss */
+.container{
+  width: 750rpx;
+  display: flex;
+  flex-direction: column
+}
+
+textarea{
+  font-size: 35rpx;
+  letter-spacing: 2px;
+  line-height: 40rpx;
+  color: #525151;
+  margin-top: 50rpx;
+  min-height: 600rpx;
+}
+
+.submit{
+  height: 100rpx;
+  width: 350rpx;
+  background: #ED5276;
+  border-radius: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.fa-envelope{
+  color: #F4CDA5;
+  font-size: 50rpx;
+  margin-right: 20rpx;
+}
+
+text{
+  color: #fff;
+  font-size: 35rpx;
+}
+
+
+.our_word{
+  width: 600rpx;
+  text-align: left;
+  font-size: 35rpx;
+  letter-spacing: 2px;
+  line-height: 50rpx;
+  margin-top: 100rpx;
+  text-indent: 2em;
+}

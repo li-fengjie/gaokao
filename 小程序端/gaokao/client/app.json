@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/college/college",
+    "pages/college_inc/collrgr_inc",
+    "pages/company_inc/company_inc",
+    "pages/psychology_inc/psychology_inc",
+    "pages/major_inc/major_inc",
+    "pages/major_search/major_search",
+    "pages/college_search/college_search",
+    "pages/province_search/province_search",
+    "pages/twobest/twobest",
+    "pages/province_line/province_line",
+    "pages/admissions_line/admissions_line",
+    "pages/major_watch/major_watch",
+    "pages/major_watch_son/major_watch_son",
+    "pages/major_watch_3rdson/major_watch_3rdson",
+    "pages/major_recommend/major_recommend",
+    "pages/me_gaokao/me_gaokao",
+    "pages/advice/advice",
+    "pages/college_major/college_major",
+    "pages/out/out"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ED5276",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#F57A82",
+    "backgroundColor": "#fff",
+    "borderStyle": "#D1C9C9",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/tab/home-0.png",
+        "selectedIconPath": "/images/tab/home-1.png"
+      },
+      {
+        "pagePath": "pages/college_inc/collrgr_inc",
+        "text": "高校介绍",
+        "iconPath": "/images/tab/hat-0.png",
+        "selectedIconPath": "/images/tab/hat-1.png"
+      },
+      {
+        "pagePath": "pages/me_gaokao/me_gaokao",
+        "text": "我的",
+        "iconPath": "/images/tab/me-0.png",
+        "selectedIconPath": "/images/tab/me-1.png"
+      }
+    ]
+  }
+}

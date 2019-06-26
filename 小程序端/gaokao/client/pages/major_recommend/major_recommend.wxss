@@ -1,0 +1,241 @@
+/* pages/major_recommend/major_recommend.wxss */
+@import "../lib/style/animation_two.wxss";
+.container{
+  width: 750rpx;
+}
+
+.recommend_num{
+  width: 750rpx;
+  background: #FFD57E;
+  position: relative;
+  height: 90rpx;
+  color: #fff;
+  margin-top: 80rpx;
+}
+
+.human_bottom{
+  position: absolute;
+  width: 120rpx;
+  height: 150rpx;
+  background: #F4C668;
+  top: -30rpx;
+  left: 40rpx;
+  z-index: -1
+}
+
+.human_top{
+  position: absolute;
+  width: 120rpx;
+  height: 150rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60rpx;
+  top: -30rpx;
+  left: 40rpx;
+}
+
+.recommend_word{
+  height: 90rpx;
+  display: flex;
+  align-items: center;
+  margin-left: 160rpx;
+  font-size: 35rpx;
+  letter-spacing: 1px;
+}
+
+.recommend_list{
+  width: 750rpx;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 100rpx;
+}
+
+.list_son{
+  position: relative;
+  width: 625rpx;
+  height: 334rpx;
+  padding-bottom: 150rpx;
+  margin: 100rpx auto 0 auto
+}
+
+.son_black{
+  position: absolute;
+  width: 625rpx;
+  height: 360rpx;
+  background: #525151;
+  z-index: 1;
+  left: 24rpx;
+  top: 8px;
+  transform: rotate(346deg)
+}
+
+.son_red{
+  position: absolute;
+  width: 635rpx;
+  height: 334rpx;
+  background: #ED5276;
+  z-index: 2;
+  top: 40px;
+  transform: rotate(8deg)
+}
+
+.son_white{
+  position: absolute;
+  width: 605rpx;
+  height: 314rpx;
+  background: #fff;
+  border: 5px solid #6B6A6A;
+  z-index: 3
+}
+
+.white_img{
+  width: 560rpx;
+  height: 240rpx;
+  margin: 10rpx auto;
+  border-radius: 5px;
+  background-image: url(http://www.mtdg.club/wwwroot/ftp/裕祺/images/gaokao/3dc417fbb776466fa536ba8311799cb9.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 60% 60%;
+}
+
+.img_curtain{
+  width: 560rpx;
+  height: 240rpx;
+  position: absolute;
+  z-index: 4;
+  background: linear-gradient(120deg, rgba(143, 156, 244, 0.8),rgba(132, 250, 176,0.5 ));
+}
+
+.white_name{
+  color: #6B6A6A;
+  position: absolute;
+  padding: 30rpx 20rpx 0rpx 20rpx;
+  top: 178rpx;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-size: 38rpx;
+  max-width: 500rpx;
+  left: 0px;
+  border-radius: 0px 5px 0px 0px;
+  z-index: 4;
+  background: #fff;
+  text-overflow:ellipsis;
+  overflow: hidden;
+  word-break: break-all;
+  -webkit-line-clamp:2; 
+  display: -webkit-box ;
+  -webkit-box-orient: vertical;
+}
+
+.white_adress{
+  background: #fff;
+  position: absolute;
+  padding: 25rpx 20rpx;
+  top: -40rpx;
+  right: -40rpx;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  color: #6B6A6A;
+  font-size: 35rpx;
+  letter-spacing: 1px;
+}
+
+.name_front{
+  display: flex;
+  align-items: flex-start;
+  margin-right: 20rpx;
+  color: #55C4B8;
+  font-weight: 800
+}
+
+.front_front{
+  color: #3C989E;
+  font-size: 40rpx;
+}
+
+.red_title{
+  position: absolute;
+  bottom: 15rpx;
+  right: 20rpx;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.title_front{
+  display: flex;
+  align-items: flex-start;
+  margin-right: 20rpx;
+  font-weight: 800;
+
+}
+
+.front_midle{
+  font-size: 50rpx;
+}
+
+.title_behind{
+  font-size: 30rpx;
+}
+
+.bottom_circle{
+  position: absolute;
+  height: 80rpx;
+  width: 80rpx;
+  border-radius: 50%;
+  background: radial-gradient(#FFD57E 20%, #fff);
+  border: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+
+.bottom_circle_ani{
+  animation: list_spread 1s forwards;
+}
+
+.bottom_circle_ani2{
+  animation: list_spread2 1s forwards;
+}
+
+.white_go{
+  height: 120rpx;
+  width: 120rpx;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  bottom: -40rpx;
+  right: -40rpx;
+}
+
+.go_word{
+  height: 120rpx;
+  width: 120rpx;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  position: relative;
+  color: #fff;
+  background: #525151;
+}
+
+.bottom_circle_ani{
+  animation: list_spread .7s forwards;
+}
+
+.bottom_circle_ani2{
+  animation: list_spread2 .7s forwards;
+}
+
+.block_shock{
+  animation: block_shock 1s forwards;
+}

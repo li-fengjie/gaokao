@@ -1,0 +1,49 @@
+/* pages/province_search/province_search.wxss */
+@import "../lib/style/animation_search.wxss";
+#container {
+  width: 750rpx;
+  margin-bottom: 300rpx;
+}
+
+.list_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30rpx;
+  padding-bottom: 50rpx;
+  border-bottom: 1px solid #6b6a6a;
+}
+
+.list_col {
+  width: 220rpx;
+  text-align: center;
+  color: #6b6a6a;
+  font-size: 40rpx;
+  position: relative;
+}
+
+.province_list {
+  width: 660rpx;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.row_border {
+  border-width: 0px !important;
+}
+
+.list_border {
+  border-right: 1px solid #6b6a6a;
+}
+
+.list_col text{
+  display: block;
+  position: relative;
+  z-index: 3
+}
+
+
+.list_shock{
+  animation: list_shock .4s forwards;
+}

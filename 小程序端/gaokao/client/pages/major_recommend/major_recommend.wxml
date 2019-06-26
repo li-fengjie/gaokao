@@ -1,0 +1,44 @@
+<!--pages/major_recommend/major_recommend.wxml-->
+<scroll-view class='container' scroll-y  bindscroll="circle_start" style='height:{{height}}px'>
+  <view class='recommend_num'>
+    <view class='human_bottom block_shock'> </view>
+    <view class='human_top '>
+      <i class="fa fa-child fa-lg "></i>
+    </view>
+    <view class='recommend_word'>我们为您找到了一共{{school_num}}所大学</view>
+  </view>
+  <view class='recommend_list'>
+    <view class='list_son' wx:for="{{school}}">
+      <view class='son_black'></view>
+      <view class='son_red'>
+        <view class='red_title'>
+          <view class='title_front'>
+            <view class='front_behind'>学</view>
+            <view class='front_midle'>历</view>
+            <view class='front_behind'>层次</view>
+          </view>
+          <view class='title_behind'>{{item.level==0?'本科一批':''}}{{item.level==1?'本科二批':''}}{{item.level==2?'本科三批':''}}{{item.level==3?'专科':''}}</view>
+        </view>
+      </view>
+      <view class='son_white'>
+        <view class='white_go'>
+          <view class="bottom_circle {{item.spread==true?'bottom_circle_ani':''}} {{item.spread==false&&now_num==index?'bottom_circle_ani2':''}}" bindanimationend="i_flashes" data-key='{{index}}'></view>
+          <view class='go_word' bindtap='jump_school' data-key='{{index}}'>详细</view>
+        </view>
+        <view class='white_img' style=' background-image:url({{item.back}})'>
+          <view class='img_curtain'></view>
+        </view>
+        <view class='white_name'>{{item.name}}</view>
+        <view class='white_adress'>
+          <view class='name_front'>
+            <view class='front_front'>院</view>
+            <view class='front_behind'>校所属</view>
+          </view>
+          <view class='name_behind'>
+            {{item.province}}
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</scroll-view> 

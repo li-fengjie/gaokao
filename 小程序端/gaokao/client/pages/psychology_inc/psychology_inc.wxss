@@ -1,0 +1,70 @@
+/* pages/gaolao/xinliceshi.wxss */
+page{
+  background-color: white;
+}
+.contain{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  
+}
+
+.inc_son{
+  margin-bottom: 20rpx;
+}
+.title_img{
+  height: 250rpx;
+  width: 100%;
+}
+.name{
+  display: flex;
+  color: #f57a82;
+  margin: 20rpx;
+}
+
+.fa-heart{
+  font-size: 60rpx;
+  margin: 0 20rpx;
+}
+
+.text_content{
+  margin: 10rpx;
+  background-color: #e9E8E8;
+  color: #706D6D;
+  font-size: 30rpx;
+}
+
+.text_content text{
+  font-size: 35rpx;
+  letter-spacing: 1px;
+}
+.goto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20rpx;
+}
+.goto_containter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35rpx;
+  background-color: #ed5276;
+  color: white;
+  width: 40%;
+  height: 2rem;
+  border-radius: 40rpx;
+}
+.goto_content{
+  display: inline-block;
+
+}
+
+.boder_solid{
+  margin-top: 120rpx;
+  border: dashed 2rpx;
+  color: #ed5276;
+}
+.fa-sign-in_css{
+  font-size: 37rpx;
+}

@@ -1,0 +1,453 @@
+/* pages/me_gaokao/me_gaokao.wxss */
+@import "../lib/style/animation_me.wxss";
+
+.container{
+  width: 750rpx;
+  margin-bottom: 300rpx;
+}
+
+
+.me_head{
+  display: flex;
+  width: 750rpx;
+  height: 250rpx;
+  background-image: url(http://www.mtdg.club/wwwroot/ftp/裕祺/images/gaokao/view1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 60% 60%;
+  justify-content: center;
+  align-items: center
+}
+
+.haed_out{
+  width: 700rpx;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  height: 166rpx;
+  position: relative;
+  z-index: 2;
+}
+
+.head_logo image{
+  height: 166rpx;
+  width: 166rpx;
+  display: blcok;
+  position: absolute;
+
+}
+
+.head_logo{
+  position: relative;
+  height: 166rpx;
+  width: 166rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.head_name{
+  color: #fff;
+  margin-left: 30rpx;
+  position: relative;
+  top: 20rpx;
+}
+
+.name{
+  width: 400rpx;
+  font-size: 40rpx;
+  margin-bottom: 30rpx;
+  display: block;
+  letter-spacing: 1px;
+}
+
+
+.head_in{
+  background: linear-gradient(150deg,rgba(143, 156, 244, 0.8) 30%,rgba(255, 255, 255, 0.3) 60%);
+  opacity: .8;
+  width: 750rpx;
+  height: 250rpx;
+  position: absolute;
+  z-index: 1
+}
+
+.head_tel{
+  width: 750rpx;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  margin-top: 10rpx;
+  position: relative;
+}
+
+
+
+.tel_num{
+  margin-left: 30rpx;
+  color: #525151;
+  font-size: 35rpx;
+  letter-spacing: 1px;
+}
+
+.fa-phone{
+  color: #F57A82;
+  margin-left: 60rpx;
+  font-size: 60rpx;
+}
+
+.tel_word{
+  color: #F57A82;
+  margin-left: 20rpx;
+  font-size: 30rpx;
+}
+
+.grade_Bubble{
+  width: 750rpx;
+  height: 500rpx;
+}
+
+.Bubble_cir{
+  width: 750rpx;
+  height: 400rpx;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  overflow: hidden
+}
+
+.Bubble_name{
+  width: 750rpx;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+}
+
+.Bubble_name view{
+  width: 250rpx;
+  text-align: center;
+  color: #525151;
+  font-size: 35rpx;
+  letter-spacing: 1px;
+}
+
+.name2{
+  border-left: 1px solid #BBBBBB;
+  border-right: 1px solid #BBBBBB;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.Bubble1,.Bubble2,.Bubble3{
+  width: 250rpx;
+  height: 380rpx;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.Bubble1{
+  height: 200rpx;
+}
+
+.Bubble2{
+  height: 300rpx;
+}
+
+
+.Bubble1_cir{
+  width: 150rpx;
+  height: 150rpx;
+  background-color: #55C4B8;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 45rpx;
+  z-index: 3
+}
+
+.Bubble2_cir{
+  width: 170rpx;
+  height: 170rpx;
+  background-color: #55C4B8;
+  border-radius: 50%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 50rpx;
+  display: flex;
+  z-index: 3
+}
+
+.Bubble3_cir{
+  width: 200rpx;
+  height: 200rpx;
+  background-color: #55C4B8;
+  border-radius: 50%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: #fff;
+  font-size: 55rpx;
+  z-index: 3
+}
+
+.Bubble_ani{
+  animation: Bubble_move 9s forwards
+}
+
+
+
+.Bubble_left view{
+  border: 2px solid #55C4B8;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1
+}
+
+.left_little1{
+  width: 40rpx;
+  height: 40rpx;
+  left: 20rpx;
+  bottom: -200rpx;
+}
+
+.left_little2{
+  width: 60rpx;
+  height: 60rpx;
+  left: 150rpx;
+  bottom: -200rpx;
+}
+
+.left_little3{
+  width: 30rpx;
+  height: 30rpx;
+  left: 130rpx;
+  bottom: -200rpx;
+}
+
+
+.Bubble_right view{
+  border: 2px solid #55C4B8;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1
+}
+
+.right_little1{
+  width: 40rpx;
+  height: 40rpx;
+  right: 20rpx;
+  bottom: -200rpx;
+}
+
+.right_little2{
+  width: 60rpx;
+  height: 60rpx;
+  right: 150rpx;
+  bottom: -200rpx;
+}
+
+.right_little3{
+  width: 30rpx;
+  height: 30rpx;
+  right: 130rpx;
+  bottom: -200rpx;
+}
+
+
+.little_move{
+  animation: little_move 2s forwards
+}
+
+.little_move2{
+  animation: little_move2 1s forwards
+}
+
+.me_wish{
+  width: 750rpx;
+  margin-top: 50rpx;
+}
+
+.wish_title{
+  color: #F57A82;
+  padding-left: 20rpx;
+  border-left: 4px solid #F57A82;
+  font-size: 35rpx;
+  margin-left: 20rpx;
+  font-weight: 800
+}
+
+.wish_block{
+  width: 730rpx;
+  height: 100rpx;
+  color: #ED5276;
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 40rpx;
+  margin-top: 40rpx;
+  left: 10rpx;
+  box-shadow: 0rpx 0rpx 50rpx #AAAAAA;
+}
+
+.wish_block text{
+  width: 750rpx;
+  font-weight: 800;
+}
+
+.fa-fort-awesome{
+  color: #F57A82;
+  position: absolute;
+  display: inline-block;
+  left: 30rpx;
+}
+
+.me_advice{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 750rpx;
+  height: 100rpx;
+  margin-top: 40rpx;
+  position: relative
+}
+
+.fa-comments-o,.fa-chevron-right{
+  color: #F57A82;
+  font-size: 65rpx;
+}
+
+.fa-comments-o{
+  margin-left: 30rpx;
+  margin-right: 20rpx;
+}
+
+.fa-chevron-right{
+  position: absolute;
+  right: 20rpx;
+}
+
+.me_advice text{
+  font-size: 35rpx;
+  color: #6B6A6A
+}
+
+
+#curtain_black_top {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 10;
+  background: #9e9c9c;
+  opacity: 0.4;
+  top: 0px;
+}
+
+.curtain_black {
+  animation: curtain_black 0.3s forwards;
+}
+
+.curtain_black_reverse {
+  animation: curtain_black_reverse 0.3s forwards;
+}
+
+#grade_input,#university_input {
+  width: 600rpx;
+  position: fixed;
+  z-index: 15;
+  top: 400rpx;
+  left: 75rpx;
+  height: 200rpx;
+}
+
+.grade_input_come {
+  animation: grade_input 0.3s forwards;
+}
+
+.grade_input_reverse {
+  animation: grade_input_reverse 0.3s forwards;
+}
+
+.grade_text {
+  color: #fff;
+}
+
+.grade_input_word {
+  animation: grade_input_word 0.5s forwards;
+}
+
+.fa-close_input,.fa-close_university {
+  font-size: 80rpx;
+  color: #ed5276;
+  position: absolute;
+  bottom: 10rpx;
+  right: 40rpx;
+  display: block;
+}
+
+.fa-check_input ,.fa-search_university{
+  font-size: 80rpx;
+  color: #ed5276;
+  position: absolute;
+  bottom: 10rpx;
+  left: 40rpx;
+  display: block;
+}
+
+
+#grade_input input,#university_input input {
+  background-color: #fff;
+  width: 600rpx;
+  border: 1px solid #bbb;
+  border-radius: 40rpx;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.fa-user{
+  font-size: 140rpx;
+  position: absolute;
+  display: block;
+  color: #525151;
+}
+
+.get_user{
+  width: 166rpx;
+  height: 166rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.get_phone{
+  height: 100rpx;
+  width: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  position: absolute;
+  right: 90rpx;
+}
+
+button::after{
+border: none;
+}
+
+.fa-pencil-square-o{
+  color: #F57A82;
+  font-size: 60rpx;
+}

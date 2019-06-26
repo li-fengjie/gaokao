@@ -1,0 +1,46 @@
+<!--pages/admissions_line/admissions_line.wxml-->
+<view id='container'>
+  <view class='shcool_change' bindtap="school_change">
+    <view class='school_name'>{{school}}</view>
+    <i class="fa fa-refresh fa-lg"></i>
+  </view>
+  <view class='province_line'>
+    <view class='admissionsline_option'>
+      <picker class='option_area' mode='selector' range='{{province_list}}' bindchange='province_change'>{{province}}</picker>
+      <picker class='option_type' mode='selector' range='{{type_list}}' bindchange='type_change'>{{type}}</picker>
+      <picker class='option_arrangement' mode='selector' range='{{arrangement_list}}' bindchange='arrangement_change'>{{arrangement}}</picker>
+      <i class="fa fa-search fa-lg fa-search_option" bindtap="search"></i>
+    </view>
+  </view>
+  <view class='college_grade'>
+    <view class='row'>
+      <view class='row_year'>年份</view>
+      <view class='row_line'>最低分数</view>
+    </view>
+    <view class='grade_row' wx:for="{{line}}">
+        <view class="grade_year" >{{item.year}}</view>
+        <view class="grade_line" >{{item.grade}}</view>
+    </view>
+  </view>
+  <view class='form'>
+    <view class='form_title'>
+      <i class="fa fa-bookmark fa-lg "></i>
+      <view class='title_name'>近三年最低分数线线</view>
+    </view>
+    <view class='form_form'>
+      <canvas canvas-id="myCanvas" id='myCanvas'/>
+      <view class='form_line'></view>
+      <view class='form_line'></view>
+      <view class='form_line'></view>
+      <view class='form_line'>
+      <view class='col_line' style="bottom:2px;left:{{(index+1)*220-112}}rpx;height:{{142-item.y}}px" wx:for="{{line}}"></view>
+      <view class='form_san'></view>
+      </view>
+      <i class="fa fa-thumb-tack fa-lg " style="top:{{item.y-22}}px;left:{{(index+1)*220-110}}rpx" wx:for="{{line}}"></i>
+      <view class='form_grade' style="top:{{item.y-40}}px;left:{{(index+1)*220-90}}rpx" wx:for="{{line}}">{{item.grade}} 分</view>
+      <view class='form_year'>
+        <view class='year'  wx:for="{{line}}">{{item.year}}</view>
+      </view>
+    </view>
+  </view>
+</view>

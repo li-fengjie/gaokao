@@ -1,0 +1,23 @@
+<!--pages/gaolao/xinliceshi.wxml-->
+<view class='contain'>
+  <view class='inc_son' wx:for="{{psy}}">
+    <image class='title_img' src='../../images/022811jqm9odk4b73huws9.jpg' mode='top'></image>
+    <view class='name'>
+      <text class='fa fa-heart'></text> {{item.psy_title}}
+    </view>
+    <view class='text_content'>
+      <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;{{item.psy_content}}
+    </text>
+    </view>
+    <view class='goto'>
+      <view class='goto_containter' bindtap='jump_out' data-key='{{index}}'>
+        <view class='goto_content'>
+          <text class=' fa fa-sign-in fa-3x fa-sign-in_css' ></text> 前往测试
+        </view>
+
+      </view>
+    </view>
+    <view class='boder_solid'>
+    </view>
+  </view>
+</view>

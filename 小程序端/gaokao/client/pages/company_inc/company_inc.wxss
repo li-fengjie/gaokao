@@ -1,0 +1,97 @@
+/* pages/gaolao/gongsixiangxi.wxss */
+page{
+  background-color: white;
+}
+content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.head_img{
+  width: 100%;
+  height: 250rpx;
+}
+.title{
+  display: flex;
+  flex-direction: row;
+  margin: 20rpx;
+  flex-wrap: wrap;
+  justify-content: center
+}
+.title_logo image{
+  width: 375rpx;
+  height: 100rpx;
+}
+
+.title_guanwang{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.guanwang_up{
+    display: inline-block;
+    font-size: 28rpx;
+    font-weight: 200;
+    color: #525050
+
+}
+.guanwang_up text{
+  font-size: 40rpx;
+  font-weight: 400;
+  margin-right: 20rpx;
+  vertical-align: bottom;
+  color: #525050;
+}
+.guanwang_up image{
+  vertical-align: middle;
+  width: 40rpx;
+  height: 40rpx;
+}
+.guanwang_down{
+  font-size: 25rpx;
+  font-weight: 200;
+  color: #857E7E;
+}
+.info{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-left: 50rpx;
+  margin-top: 50rpx;
+  margin-right: 50rpx;
+}
+.info_name{
+  border-left: solid 3px;
+  padding-left: 10rpx;
+  color: #3c989e;
+}
+.info_content{
+  display: inline-block;
+  font-size: 30rpx;
+  font-weight: 300;
+  margin-top: 20rpx;
+
+}
+
+.info_content text{
+  color: #525050;
+  font-size: 30rpx;
+  line-height: 50rpx;
+}
+
+.info_content image{
+  margin-right: 10rpx;
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: bottom;
+}
+.fa-sign-out_color{
+  color: #55c4b8;
+}
+.fa-mortar-board_css{
+  color: #ED5276;
+  margin-right: 10rpx;
+  font-size: 40rpx;
+}

@@ -1,0 +1,476 @@
+/* pages/index/index.wxss */
+@import "../lib/style/animation.wxss";
+
+page {
+  width: 100%;
+  height: 100%;
+  background-color: #f7f7f7;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#index_semicircle {
+  z-index: -1;
+  width: 750rpx;
+  height: 240rpx;
+  background-color: #ed5276;
+  border-radius: 100%;
+  position: absolute;
+  top: -120rpx;
+}
+
+#index_greet {
+  margin-top: 20rpx;
+  width: 710rpx;
+  height: 380rpx;
+  border-radius: 40rpx;
+  background-color: #fff;
+  border: 1px solid #f4cda5;
+  box-shadow: 0rpx 20rpx 50rpx #c9c5c9;
+}
+
+#greet_date view {
+  display: inline-block;
+  margin-right: 20rpx;
+  font-size: 35rpx;
+  color: #524f50;
+}
+
+#greet_date {
+  margin-left: 40rpx;
+  margin-top: 60rpx;
+  width: 600rpx;
+  height: 46rpx;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #bbb;
+}
+
+#greet_pic {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 34rpx;
+  width: 600rpx;
+  height: 140rpx;
+  border-radius: 20rpx;
+  margin-left: 40rpx;
+  background-image: url(http://www.mtdg.club/wwwroot/ftp/裕祺/images/gaokao/view5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 30%;
+}
+
+#pic_gradientcolor {
+  width: 100%;
+  height: 100%;
+  border-radius: 20rpx;
+  background: linear-gradient(120deg, #f57ab2, #f4cda5);
+  opacity: 0.7;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 0;
+}
+
+#pic_word {
+  font-size: 40rpx;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  margin-left: 20rpx;
+}
+
+#greet_end {
+  margin-top: 20rpx;
+  width: 710rpx;
+  font-size: 30rpx;
+  border-top: 1px solid #9c9a9c;
+  padding-top: 8px;
+}
+
+#end_volunteer {
+  color: #9c9a9c;
+  margin-left: 40rpx;
+}
+
+#index_form {
+  width: 730rpx;
+  height: 60rpx;
+  border-radius: 5px;
+  margin-top: 40rpx;
+  background: linear-gradient(90deg, #84fab0, #8fd3f4);
+  font-size: 35rpx;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+#form_circle {
+  width: 610rpx;
+  height: 650rpx;
+  position: absolute;
+  top: 140rpx;
+  opacity: 1;
+}
+
+.circle_son {
+  border-radius: 100%;
+}
+
+.ciecle_shock {
+  animation: ciecle_shock 0.3s forwards !important;
+}
+
+#circle_volunteer {
+  background-color: #fad68a;
+  height: 400rpx;
+  width: 400rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 52rpx;
+  position: relative;
+  z-index: 3;
+}
+
+#circle_volunteer view{
+  width: 300rpx;
+  text-align: center;
+  text-overflow:ellipsis;
+  overflow: hidden;
+  word-break: break-all;
+  -webkit-line-clamp:2; 
+  display: -webkit-box ;
+  -webkit-box-orient: vertical;
+}
+
+.circle_volunteer_come {
+  animation: ciecle_enlarge 0.2s forwards;
+}
+
+.circle_volunteer_back {
+  animation: ciecle_narrow 0.2s forwards;
+}
+
+#circle_grade {
+  background-color: #55c4b8;
+  height: 280rpx;
+  width: 280rpx;
+  font-size: 52rpx;
+  position: absolute;
+  top: 60rpx;
+  left: 60rpx;
+  opacity: 0;
+  transition: 0.2s;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle_grade_come {
+  opacity: 1!important;
+  top: -10rpx!important;
+  left: 345rpx!important;
+}
+
+
+#circle_location {
+  height: 280rpx;
+  width: 280rpx;
+  background-color: #f57a82;
+  font-size: 48rpx;
+  position: absolute;
+  z-index: 2;
+  top: -10rpx;
+  left: 345rpx;
+  opacity: 0;
+  transition: 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle_location_come {
+  opacity: 1!important;
+  left: 325rpx!important;
+  top: 190rpx!important;
+}
+
+
+#circle_target {
+  background-color: #f8d17e;
+  height: 280rpx;
+  width: 280rpx;
+  font-size: 48rpx;
+  position: absolute;
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 325rpx;
+  top: 190rpx;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.circle_target_come {
+  opacity: 1!important;
+  left: 90rpx!important;
+  top: 290rpx!important;
+}
+
+
+.form_submit {
+  font-size: 0%;
+  opacity: 0;
+  position: absolute;
+  top: 388rpx;
+  left: 198rpx;
+  width: 84rpx;
+  height: 84rpx;
+  border-radius: 40rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0px;
+  background: linear-gradient(90deg, #84fab0, #8fd3f4);
+  color: #fff;
+  transition: .2s;
+}
+
+.form_move{
+  left: 263rpx;
+  top: 600rpx;
+  opacity: 1!important;
+}
+
+.form_change {
+  opacity: 1!important;
+  left: 180rpx;
+  top: 600rpx;
+  width: 250rpx;
+  font-size: 130%;
+}
+
+.fa-close_form {
+  font-size: 80rpx;
+  color: #ed5276;
+  position: absolute;
+  top: 610rpx;
+  right: 50rpx;
+  display: block;
+  animation: close_rotate 1s forwards;
+}
+
+.index_navigation {
+  transition: 0.3s;
+  margin-top: 120rpx;
+  width: 750rpx;
+  height: 400rpx;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.index_navigation_slide {
+  margin-top: 850rpx;
+}
+
+.navigation_son {
+  height: 220rpx;
+  width: 250rpx;
+  display: inline-block;
+  text-align: center;
+  transition: 0.2s;
+  position: relative;
+  bottom: 0rpx;
+  box-shadow: 0rpx 0rpx #fff;
+}
+
+.navigation_son_word {
+  display: block;
+  color: #fff;
+  font-size: 38rpx;
+  margin-top: 30rpx;
+}
+
+.navigation_son .fa {
+  font-size: 80rpx;
+  color: #fff;
+  margin-top: 50rpx;
+}
+
+.shadow_university {
+  bottom: 100rpx;
+  box-shadow: 20rpx 20rpx #ef9b9b;
+}
+
+.shadow_major {
+  bottom: 100rpx;
+  box-shadow: 20rpx 20rpx #ffe8b8;
+}
+
+.shadow_provincialcontrolline {
+  bottom: 100rpx;
+  box-shadow: 20rpx 20rpx #bce3d8;
+}
+
+.shadow_psychology {
+  bottom: 100rpx;
+  box-shadow: 20rpx 20rpx #fae3cd;
+}
+
+.shadow_admissionsline {
+  bottom: 100rpx;
+  box-shadow: 20rpx 20rpx #d3b9e3;
+}
+
+.shadow_twobest {
+  bottom: 100rpx;
+  box-shadow: 20rpx 20rpx #b2c5e4;
+}
+
+#navigation_university {
+  background-color: #df7778;
+  z-index: 3;
+}
+
+#navigation_major {
+  background-color: #ffd57e;
+  z-index: 2;
+}
+
+#navigation_provincialcontrolline {
+  background-color: #89c7b6;
+  z-index: 1;
+}
+
+#navigation_psychology {
+  background-color: #f4cda5;
+  z-index: 3;
+}
+
+#navigation_admissionsline {
+  background-color: #ad84c7;
+  z-index: 2;
+}
+
+#navigation_twobest {
+  background-color: #7998c9;
+  z-index: 1;
+}
+
+#curtain_transparent_top {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 10;
+  background: #fff;
+  opacity: 0;
+}
+
+#curtain_black_top {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 10;
+  background: #9e9c9c;
+  opacity: 0.4;
+}
+
+.curtain_black {
+  animation: curtain_black 0.3s forwards;
+}
+
+.curtain_black_reverse {
+  animation: curtain_black_reverse 0.3s forwards;
+}
+
+#grade_input,#university_input {
+  width: 600rpx;
+  position: fixed;
+  z-index: 15;
+  top: 400rpx;
+  left: 75rpx;
+  height: 200rpx;
+}
+
+.grade_input_come {
+  animation: grade_input 0.3s forwards;
+}
+
+.grade_input_reverse {
+  animation: grade_input_reverse 0.3s forwards;
+}
+
+.grade_input_word {
+  animation: grade_input_word 0.5s forwards;
+}
+
+#grade_input input,#university_input input {
+  background-color: #fff;
+  width: 600rpx;
+  border: 1px solid #bbb;
+  border-radius: 40rpx;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.grade_text {
+  color: #fff;
+}
+
+.fa-close_input,.fa-close_university {
+  font-size: 80rpx;
+  color: #ed5276;
+  position: absolute;
+  bottom: 10rpx;
+  right: 40rpx;
+  display: block;
+}
+
+.fa-check_input ,.fa-search_university{
+  font-size: 80rpx;
+  color: #ed5276;
+  position: absolute;
+  bottom: 10rpx;
+  left: 40rpx;
+  display: block;
+}
+
+.fa-search_university{
+  font-size: 80rpx;
+  color: #ed5276;
+  position: fixed;
+  bottom: 10rpx;
+  left: 260rpx;
+  display: block;
+}
+
+.fa-close_university{
+   font-size: 80rpx;
+  color: #ed5276;
+  position: fixed;
+  top: -350rpx;
+  right: 20rpx;
+  display: block;
+}
+
+#curtain_university_top {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 10;
+  background: #9e9c9c;
+  opacity: 0.4;
+}

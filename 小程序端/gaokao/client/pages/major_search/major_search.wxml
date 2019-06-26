@@ -1,0 +1,14 @@
+<!--pages/major_search/major_search.wxml-->
+<view id='container'>
+  <view class='major_search '>
+    <input class='search_input' placeholder='输入专业关键字' bindblur='major_name_set'></input>
+    <view class='search_button'>
+      <i class="fa fa-search fa-lg" bindtap="search"></i>
+    </view>
+  </view>
+  <view class='major_list'>
+    <view class="list_son {{major[index].shock==true?'list_shock':''}} {{major[index].color==1?'list_son_1':''}} {{major[index].color==2?'list_son_2':''}} {{major[index].color==3?'list_son_3':''}}" wx:for="{{major}}" data-key='{{index}}' bindtap='list_shock'> 
+      {{major[index].name}}
+    </view>
+  </view>
+</view>

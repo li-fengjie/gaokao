@@ -1,0 +1,19 @@
+<!--pages/major_watch_son/major_watch_son.wxml-->
+<view class='container'>
+  <view class='son_title'>
+    <view class='title_name'>专业名</view>
+    <view class='title_code'>
+      <i class="fa fa-star-o fa-lg"></i>
+      <text>专业代码</text>
+    </view>
+  </view>
+  <view class='son_list'>
+    <view class='major_son' wx:for="{{major}}" data-key='{{index}}' bindtap='major_watch'>
+      <view class='son_name'>{{item.name}}</view>
+      <view class='son_code'>
+        <text>{{item.code}}</text>
+      </view>
+      <i class="fa fa-chevron-right fa-lg"></i>
+    </view>
+  </view>
+</view>

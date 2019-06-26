@@ -1,0 +1,196 @@
+/* pages/gaolao/college.wxss */
+#container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 750rpx;
+  margin-bottom: 300rpx;
+}
+
+.college_head{
+  display: flex;
+  width: 750rpx;
+  height: 250rpx;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 60% 60%;
+  justify-content: center;
+  align-items: center
+}
+
+.haed_out{
+  width: 700rpx;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 166rpx;
+  position: relative;
+  z-index: 2;
+}
+
+.head_logo image{
+  height: 166rpx;
+  width: 166rpx;
+  display: blcok;
+  position: absolute;
+}
+
+.head_logo{
+  position: relative;
+  height: 166rpx;
+  width: 166rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #fff
+}
+
+.head_name{
+  color: #fff;
+  margin-left: 30rpx;
+  height: 120rpx;
+}
+
+.name_chinese{
+  width: 400rpx;
+  font-size: 40rpx;
+  margin-bottom: 30rpx;
+  display: block
+}
+
+.name_english{
+  width: 400rpx;
+  font-size: 20rpx;
+  display: block
+}
+
+.head_in{
+  background: linear-gradient(120deg, rgba(143, 156, 244, 0.8),rgba(132, 250, 176,0.5 ));
+  opacity: .8;
+  width: 750rpx;
+  height: 250rpx;
+  position: absolute;
+  z-index: 1
+}
+
+
+.college_information{
+  display: flex;
+  flex-wrap: wrap;
+  width: 650rpx;
+  margin: 0 auto;
+  justify-content: space-between;
+  margin-top: 50rpx;
+}
+
+.information{
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+  margin-bottom: 20rpx;
+}
+
+.information_introduction{
+  flex-direction: column;
+}
+
+.information_introduction .behind{
+  margin-top: 20rpx;
+  max-width: 620rpx;
+  letter-spacing: 1px;
+  line-height: 45rpx;
+}
+
+.front,.admissionsline_name,.major_tittle{
+  display: inline-block;
+  color: #3C989E;
+  font-size: 30rpx;
+  font-weight: 800;
+  height: 40rpx;
+  padding-left: 5rpx;
+  border-left: 5px solid #3C989E;
+}
+
+.behind{
+  max-width: 450rpx;
+  margin-left: 20rpx;
+  display: inline-block;
+  color: #6B6A6A;
+  font-size: 30rpx;
+}
+
+.college_admissionsline,.college_major{
+  width: 650rpx;
+  margin-top: 50rpx;
+}
+
+.admissionsline_option{
+  margin-top: 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 35rpx;
+  color: #55C4B8;
+}
+
+.admissionsline_option view,.admissionsline_option picker{
+  display: inline-block;
+  border-top: 1px solid #55C4B8;
+  border-bottom: 1px solid #55C4B8;
+  width: 150rpx;
+  text-align: center;
+  padding: 5rpx 0
+}
+
+.admissionsline_option i{
+  display: inline-block
+}
+
+.college_grade{
+  width: 750rpx;
+  margin-top: 30rpx;
+}
+
+.row,.grade_row{
+  display: flex;
+  width: 750rpx;
+}
+
+.row view{
+  background-color: #4ACDD6;
+  width: 187.5rpx;
+  text-align: center;
+  color: #fff;
+  font-size: 30rpx;
+  padding: 15rpx 0;
+}
+
+.grade_year,.grade_average,.grade_min,.grade_line{
+  background-color: #fff;
+  width: 187.5rpx;
+  text-align: center;
+  color: #6B6A6A;
+  font-size: 30rpx;
+  padding: 15rpx 0;
+}
+
+.major_s{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30rpx;
+  flex-direction: row
+}
+
+.major{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 35rpx;
+  color: #6B6A6A;
+  margin-bottom: 30rpx
+}
+
+.fa-bookmark-o_major{
+  color: #ED5276;
+  margin-right: 10rpx;
+}

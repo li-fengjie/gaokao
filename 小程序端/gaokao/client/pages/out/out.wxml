@@ -1,0 +1,2 @@
+<!--pages/out/out.wxml-->
+<span style="color:#ff0000;"><web-view src="{{url}}/"></web-view></span>

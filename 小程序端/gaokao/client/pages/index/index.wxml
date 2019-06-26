@@ -1,0 +1,87 @@
+<!--pages/index/index.wxml-->
+<view id='container'>
+  <view id='index_semicircle'></view>
+  <view id='index_greet'>
+    <view id='greet_date'>
+      <view id='date_date'>{{now_year}}/{{now_month}}/{{now_date}}</view>
+      <view id='date_day'>{{now_day}}</view>
+      <view id='date_testend'>{{day_Differ>0?'高考结束后'+day_Differ+'天':'离高考还有'+(-day_Differ)+'天'}}</view>
+    </view>
+    <view id='greet_pic'>
+      <view id='pic_gradientcolor'></view>
+      <view id='pic_word'>Ready for the future？</view>
+    </view>
+    <view id='greet_end'>
+      <view id='end_volunteer'></view>
+    </view>
+  </view>
+  <view id='index_form' bindtap="{{index_form_open==true?'':'form_open'}}">
+    <view id='form_greet'>
+      初次见面，先告诉我你的分数吧
+    </view>
+    <view id='form_circle' wx:if="{{form_circle_disabled}}">
+      <view id='circle_volunteer' class="circle_son {{circle_son_disabled[0].start==true?'circle_volunteer_come':''}} {{index_form_ani_end==true&&circle_son_disabled[0].start==false?'circle_volunteer_back':''}}  {{ciecle_shock[0].shock==true?'ciecle_shock':''}}"
+        data-key='0' bindtap='ciecle_shock' bindanimationend="{{index_form_ani_end==true?'circle_son_back':'circle_son_start'}}">
+        <view>{{form_volunteer!=''?form_volunteer:'志愿专业'}}</view>
+      </view>
+      <view id='circle_grade' class="circle_son {{ciecle_shock[1].shock==true?'ciecle_shock':''}} {{circle_son_disabled[1].start==true?'circle_grade_come':''}}" data-key='1' bindtap='ciecle_shock' bindtransitionend="{{index_form_ani_end==true?'circle_son_back':'circle_son_start'}}">
+        <text>{{form_grade!=''?form_grade:'分数'}}</text>
+      </view>
+      <view id='circle_location' class="circle_son  {{ciecle_shock[2].shock==true?'ciecle_shock':''}} {{circle_son_disabled[2].start==true?'circle_location_come':''}}" data-key='2' bindtap='ciecle_shock' bindtransitionend="{{index_form_ani_end==true?'circle_son_back':'circle_son_start'}}">
+        <text>{{form_location!=''?form_location:'所在地区'}}</text>
+      </view>
+      <view id='circle_target' class="circle_son  {{ciecle_shock[3].shock==true?'ciecle_shock':''}} {{circle_son_disabled[3].start==true?'circle_target_come':''}}" data-key='3' bindtap='ciecle_shock' bindtransitionend="{{index_form_ani_end==true?'circle_son_back':'circle_son_start'}}">
+        <text>{{form_target!=''?form_target:'志愿地区'}}</text>
+      </view>
+
+      <i class="fa fa-close fa-lg fa-close_form" bindtap="form_close"></i>
+      <form bindsubmit='formsubmit' id='circle_form'>
+        <button class="form_submit {{circle_son_disabled[4].start==true?'form_move':''}} {{circle_son_disabled[4].ani_type==true?'form_change':''}}" form-type='submit' data-key='4' bindtransitionend="{{circle_son_disabled[4].start==true?'circle_son_start':''}}" wx:if="{{index_form_ani_start}}" bindtap='recommend_search'>查询</button>
+
+        <button class="form_submit {{circle_son_disabled[4].start==true?'form_move':''}} {{circle_son_disabled[4].ani_type==true?'form_change':''}}" form-type='submit' data-key='4' bindtransitionend="{{index_form_ani_end==true?'circle_son_back':''}}" wx:if="{{!index_form_ani_start}}" bindtap='recommend_search'>查询</button>
+      </form>
+    </view>
+  </view>
+  <view class="index_navigation  {{index_navigation_slide==true?'index_navigation_slide':''}}">
+    <view class="navigation_son {{navigation_shadow[0].start==true?'shadow_university':''}}" id='navigation_university' data-key="0" bindtap='navigation_shadow_open'>
+      <i class="fa fa-fort-awesome fa-lg"></i>
+      <text class='navigation_son_word'>查大学</text>
+    </view>
+    <view class="navigation_son {{navigation_shadow[1].start==true?'shadow_major':''}}" id='navigation_major' url='' open-type='switchTab' data-key="1" bindtap='navigation_shadow_open' bindtransitionend="navigation_shadow_close">
+      <i class="fa fa-book fa-lg"></i>
+      <text class='navigation_son_word'>看专业</text>
+    </view>
+    <view class="navigation_son {{navigation_shadow[2].start==true?'shadow_provincialcontrolline':''}}" id='navigation_provincialcontrolline' url='' open-type='switchTab' data-key="2" bindtap='navigation_shadow_open' bindtransitionend="navigation_shadow_close">
+      <i class="fa fa-server fa-lg"></i>
+      <text class='navigation_son_word'>省控线</text>
+    </view>
+    <view class="navigation_son {{navigation_shadow[3].start==true?'shadow_psychology':''}}" id='navigation_psychology' url='' open-type='switchTab' data-key="3" bindtap='navigation_shadow_open' bindtransitionend="navigation_shadow_close">
+      <i class="fa fa-user-md fa-lg"></i>
+      <text class='navigation_son_word'>心理测试</text>
+    </view>
+    <view class="navigation_son {{navigation_shadow[4].start==true?'shadow_admissionsline':''}}" id='navigation_admissionsline' url='' open-type='switchTab' data-key="4" bindtap='navigation_shadow_open' bindtransitionend="navigation_shadow_close">
+      <i class="fa fa-bar-chart fa-lg"></i>
+      <text class='navigation_son_word'>录取线</text>
+    </view>
+    <view class="navigation_son {{navigation_shadow[5].start==true?'shadow_twobest':''}}" id='navigation_twobest' url='' open-type='switchTab' data-key="5" bindtap='navigation_shadow_open' bindtransitionend="navigation_shadow_close">
+      <i class="fa fa-flag fa-lg"></i>
+      <text class='navigation_son_word'>双一流</text>
+    </view>
+  </view>
+
+  <view id="curtain_transparent_top" wx:if="{{curtain_transparent_top}}"></view>
+  <view id="curtain_black_top" wx:if="{{curtain_black_top}}" class="{{grade_input==true?'curtain_black':'curtain_black_reverse'}}"></view>
+  <view id="curtain_university_top" wx:if="{{curtain_university_top}}" class="{{grade_input==true?'curtain_black':'curtain_black_reverse'}}"></view>
+
+  <view id='grade_input' class="{{grade_input==true?'grade_input_come':'grade_input_reverse'}}" wx:if="{{curtain_black_top}}" bindanimationend="input_word">
+    <input placeholder='输入你的高考总分' placeholder-class="grade_text {{grade_input_word==true?'grade_input_word':''}}" bindinput="grade_set"></input>
+    <i class="fa fa-close fa-lg fa-close_input" bindtap="grade_input_close" data-key='close'></i>
+    <i class="fa fa-check fa-lg fa-check_input" bindtap="grade_input_close" data-key='check'></i>
+  </view>
+
+  <view id='university_input' class="{{grade_input==true?'grade_input_come':'grade_input_reverse'}}" bindanimationend='input_word' wx:if="{{curtain_university_top}}">
+    <input placeholder='你想找哪间大学呀？' placeholder-class="grade_text {{grade_input_word==true?'grade_input_word':''}}" bindblur='college_name_set'></input>
+    <i class="fa fa-close fa-lg fa-close_university" bindtap="grade_input_close" data-key='university_close' data-search="false"></i>
+    <i class="fa fa-search fa-lg fa-search_university" bindtap="grade_input_close" data-key='university_close' data-search="true"></i>
+  </view>
+</view>

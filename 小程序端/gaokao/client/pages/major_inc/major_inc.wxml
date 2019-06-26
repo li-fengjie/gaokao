@@ -1,0 +1,39 @@
+<!--pages/gaolao/zhuanye.wxml-->
+<view class='content'>
+  <view class='title'>
+    <view class='title_content'>
+    <text class='fa fa-book '></text>
+      {{name}}
+    </view>
+  </view>
+  <view class='number'>
+    <view class='number-content'>
+       <text class='fa fa-star '></text>
+       <text>专业代码</text>    
+    </view>
+     
+    <view class='num'>{{code}}</view>
+  </view>
+  <view class='info'>
+    <view>
+     <text >专业简介</text>    
+    </view>
+    <view class='major_info'>
+         {{info}}
+    </view>
+  </view>
+  <view class='number'>
+    <view class='number-content'>
+      <text class='fa fa-fort-awesome'></text>
+      <text>开设院校</text>     
+    </view> 
+  </view>
+  <view class='school_list'>
+    <view class='school' wx:for="{{schools}}" bindtap='jump_school' data-id='{{item.id}}'>
+      <text class='provice'>{{item.province}}</text>
+      <text class='fa fa-bookmark-o fa-lg fa-bookmark-o_major'></text>
+      <text class='school_name'>{{item.name}}</text>
+    </view>
+  </view>
+
+</view>

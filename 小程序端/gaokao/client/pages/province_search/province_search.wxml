@@ -1,0 +1,10 @@
+<!--pages/province_search/province_search.wxml-->
+<view id='container'>
+<view class='province_list'>
+  <view class="list_row {{item[0].row==10?'row_border':''}}" wx:for="{{province}}">
+    <view data-row='{{item.row}}' data-col='{{item.col}}' class="list_col {{item.col<=1?'list_border':''}} "  wx:for="{{item}}" bindtap="list_shock">
+      <text class="{{item.shock==true?'list_shock':''}}">{{item.name}}</text>
+    </view>
+  </view>
+</view>
+</view>
